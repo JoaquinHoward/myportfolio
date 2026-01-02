@@ -1,0 +1,71 @@
+/* 1. Universal Reset (The "Fat Box" fix you learned) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif; /* Nice clean font */
+}
+
+/* 2. The Parent Container */
+.navbar {
+    background-color: #222; /* Dark Grey */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* --- MISSION: ADD FLEXBOX HERE --- */
+    /* currently, the logo and links are stacked. */
+    /* Make them a row, space them apart, and center them vertically. */
+}
+
+/* 3. The Logo Styling */
+.logo {
+    font-size: 1.5rem; /* Make it big */
+}
+
+/* 4. The Links Styling */
+.nav-links li {
+    display: inline-block; /* Makes the list items sit side-by-side */
+    margin-left: 20px;
+    cursor: pointer; /* Shows a hand icon when you hover */
+}
+
+/* Optional: Hover effect */
+.nav-links li:hover {
+    color: #00adb5; /* Cyan color on hover */
+}
+.hero{
+    background-color: #333;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #dddd;
+    padding: 2em;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0,1);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2em;
+}
