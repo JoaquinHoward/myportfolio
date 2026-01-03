@@ -13,6 +13,7 @@ a.card{
 body {
     font-family: 'Azeret Mono', monospace; /* Nice clean font */
     background-color: #222;
+    color: white;
 }
 
 /* 2. The Parent Container */
@@ -61,11 +62,11 @@ body {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0,1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover{
     transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     cursor: pointer;
     color: #00adb5;
@@ -81,25 +82,53 @@ body {
 
 #Languages{
     flex-wrap: wrap;
-    background-color:rgb(19, 19, 19);
+    background-color: #222; /* Dark Grey */
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
+    margin-bottom: 40px;
 }
 .lang{
     /* flex-wrap: wrap; */
     color: whitesmoke;
     display: flex;
-    background-color: #000000dd;
+    background-color: lch(26.42% 66.21 310.38);
+    background-color: lch(10.31% 59.34 310.96);
     width: 180px;
     height: 140px;
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 .lang:hover{
-    background-color: lch(10.31% 59.34 310.96);
+    /* background-color: grey; */
+    /* transform: translateY(-10px); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
+    transform: scale(1.1);
+}
+
+#Services{
+    background-color: lch(10.31% 59.34 310.96);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Serve-Card{
+    font-family: 'Google Sans', sans-serif;
+    padding: 10px;
+    color: black;
+    background-color: whitesmoke; /* Dark Grey */
+    width: 50vh;
+    height: 50vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#Serve-Card li{
+    list-style: none;
 }
