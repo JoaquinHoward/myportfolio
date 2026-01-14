@@ -10,10 +10,18 @@ html{
 a.card{
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 body {
     font-family: 'Azeret Mono', monospace; /* Nice clean font */
     background-color: #222;
     color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 /* 2. The Parent Container */
@@ -84,6 +92,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+    height: 100vh;
+    width: 100%;
 }
 .lang{
     display: flex;
@@ -122,4 +133,10 @@ body {
 
 #Serve-Card li{
     list-style: none;
+}
+
+#langpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
