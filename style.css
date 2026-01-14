@@ -81,27 +81,18 @@ body {
 }
 
 #Languages{
-    flex-wrap: wrap;
-    background-color: #222; /* Dark Grey */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
-}
-.lang{
-    /* flex-wrap: wrap; */
-    color: whitesmoke;
-    display: flex;
-    background-color: lch(26.42% 66.21 310.38);
-    background-color: lch(10.31% 59.34 310.96);
-    width: 180px;
-    height: 140px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+}
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 44, 181);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 8px;    
 }
 .lang:hover{
     /* background-color: grey; */
