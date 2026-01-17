@@ -140,3 +140,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+#contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lch(10.31% 59.34 310.96);
+    width: 40rem;
+    height: 40em;
+}
