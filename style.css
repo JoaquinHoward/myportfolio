@@ -16,7 +16,7 @@ a{
     cursor: pointer;
 }
 body {
-    font-family: 'Azeret Mono', monospace; /* Nice clean font */
+    font-family: "Work Sans", sans-serif;
     background-color: #222;
     color: white;
     /* display: flex;
@@ -155,4 +155,13 @@ body {
     background-color: lch(10.31% 59.34 310.96);
     width: 40rem;
     height: 40em;
+    border-radius: 8px;
+}
+
+.inner-card{
+    color: black;
+    background-color: rgb(158, 158, 158);
+    height: 39rem;
+    width: 39rem;
+    border-radius: 8px;
 }
